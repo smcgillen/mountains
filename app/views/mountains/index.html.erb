@@ -1,0 +1,4 @@
+<% @mountains.each do |mountain| %>
+<p>The <%= link_to(mountain.name, mountain_path(mountain.id)) %> mountains in  <%= link_to(mountain.country, 'country') %> are <%= link_to(mountain.height, 'height') %> meters above sea level.</p>
+
+<% end %>
